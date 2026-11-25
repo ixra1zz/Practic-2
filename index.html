@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechShop — магазин электроники</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>TechShop</h1>
+    <p>Магазин электроники</p>
+  </header>
+
+  <main>
+    <h2>Наши товары</h2>
+    <section class="products" aria-label="Каталог наушников">
+      <article class="product">
+        <div class="product-image" aria-hidden="true">🎧</div>
+        <h3>Беспроводные наушники</h3>
+        <p class="description">Bluetooth, встроенный микрофон</p>
+        <p class="price">2500 ₽</p>
+        <button class="buy" data-product="Беспроводные наушники">Купить</button>
+        <button class="details" data-info="Беспроводные наушники — Bluetooth, встроенный микрофон, радиус действия до 10 метров.">Подробнее</button>
+      </article>
+
+      <article class="product">
+        <div class="product-image" aria-hidden="true">🎵</div>
+        <h3>TWS-наушники</h3>
+        <p class="description">Компактные и удобные</p>
+        <p class="price">1999 ₽</p>
+        <button class="buy" data-product="TWS-наушники">Купить</button>
+        <button class="details" data-info="TWS-наушники — полностью беспроводная конструкция, компактный кейс для зарядки.">Подробнее</button>
+      </article>
+
+      <article class="product">
+        <div class="product-image" aria-hidden="true">🎮</div>
+        <h3>Игровые наушники</h3>
+        <p class="description">Объёмный звук и микрофон</p>
+        <p class="price">4999 ₽</p>
+        <button class="buy" data-product="Игровые наушники">Купить</button>
+        <button class="details" data-info="Игровые наушники — объёмный звук, микрофон для общения и мягкие амбушюры.">Подробнее</button>
+      </article>
+
+      <article class="product">
+        <div class="product-image" aria-hidden="true">🎧</div>
+        <h3>Накладные наушники</h3>
+        <p class="description">Мягкие амбушюры, складная конструкция</p>
+        <p class="price">3290 ₽</p>
+        <button class="buy" data-product="Накладные наушники">Купить</button>
+        <button class="details" data-info="Накладные наушники — складная конструкция, мягкие амбушюры, удобны для повседневного использования.">Подробнее</button>
+      </article>
+    </section>
+
+    <section class="messages" aria-live="polite">
+      <p id="message" class="message"></p>
+      <p id="info" class="info"></p>
+      <p id="delivery-info" class="info"></p>
+    </section>
+
+    <section class="actions">
+      <button id="delivery">Доставка</button>
+      <button id="clear">Очистить сообщения</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
